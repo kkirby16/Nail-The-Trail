@@ -1,7 +1,7 @@
-<h1>Login!</h1>
+<br><h1>Login!</h1>
 
 <%= form_tag("/login", method: "post") do %>
-Enter your username: <%= text_field_tag :"[user]username" %>
-Enter your password: <%= password_field_tag :"[user]password" %>
+Enter your username: <%= text_field_tag :"[user]username" %><br><br>
+Enter your password: <%= password_field_tag :"[user]password" %><br><br>
 <%= submit_tag "Login" %>
 <% end %>

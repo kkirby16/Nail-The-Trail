@@ -5,11 +5,31 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
   </head>
 
   <body>
+  <header class='clearfix'>
+  <div class="left-nav">
+    <ul>
+    <li><%= link_to "Home", root_path %></li>
+    </ul>
+    <ul>
+          <li><%= link_to "Login", login_path %></li>
+</ul>
+<ul>
+<li>next link here</li>
+</ul>
+  </div>
+  <div class="right-nav">
+    <ul>
+      <li>this will be a link somewhere</li>
+    </ul>
+  </div>
+</header>
+<div class="content">
     <%= yield %>
+    </div>
   </body>
 </html>

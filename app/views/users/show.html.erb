@@ -1,7 +1,9 @@
-This is the show page 
 
-<h1><%= @user.username %>'s show page</h1>
-<%= @user.name %>
-<%= @user.city %>
-<%= @user.bio %>
-<%= @user.years_hiking %>
+<h1>Welcome to Nail the Trail!</h1>
+<h2>This is your profile page <%= @user.username %></h1><br><br>
+<label>My name: </label><%= @user.name %><br>
+<label>My city: </label><%= @user.city %><br>
+<label>My bio: </label><%= @user.bio %><br>
+<label>My number of years hiking: </label><%= @user.years_hiking %><br>
+
+<!-- maybe make creating a user go to a welcome page instead of a user show page and maybe have that welcome page show them a couple clickable options for what they can do on the app.>

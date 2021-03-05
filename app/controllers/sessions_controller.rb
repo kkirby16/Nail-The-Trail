@@ -1,3 +1,5 @@
+require "pry"
+
 class SessionsController < ApplicationController
   def new
   end
@@ -9,10 +11,10 @@ class SessionsController < ApplicationController
         session[:user_id] = @user.id
         redirect_to welcome_path
       else
-        redirect_to login_path
+        redirect_to login_path, notice: "*Please enter a valid password."
       end
     else
-      redirect_to login_path
+      redirect_to login_path, notice: "*Please enter a valid username and your password."
     end
   end
 

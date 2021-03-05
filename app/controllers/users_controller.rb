@@ -1,3 +1,5 @@
+require "pry"
+
 class UsersController < ApplicationController
   before_action :require_login
   skip_before_action :require_login, only: [:new, :create]
@@ -15,7 +17,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to welcome_path
     else
-      redirect_to signup_path
+      render :new
     end
   end
 

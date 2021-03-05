@@ -1,5 +1,7 @@
 <br><h1>Create a new account!</h1>
 
+<%= render "error_messages" %>
+
 <%= form_for(@user) do |f| %>
 <br><label>Name: </label><br>
 <%= f.text_field :name %><br>

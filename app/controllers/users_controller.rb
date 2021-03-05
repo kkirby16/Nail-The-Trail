@@ -13,10 +13,13 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to @user
+      redirect_to welcome_path
     else
       redirect_to signup_path
     end
+  end
+
+  def welcome
   end
 
   def show

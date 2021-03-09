@@ -6,7 +6,7 @@
 <br><h1>Login!</h1>
 
 <%= form_tag("/login", method: "post") do %>
-Enter your username: <%= text_field_tag :"[user]username" %><br><br>
-Enter your password: <%= password_field_tag :"[user]password" %><br><br>
+<%= text_field_tag :"[user]username", nil, placeholder: "Username" %><br><br>
+<%= password_field_tag :"[user]password", nil, placeholder: "Password" %><br><br>
 <%= submit_tag "Login" %>
 <% end %>

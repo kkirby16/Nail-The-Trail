@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/signup", to: "users#new", as: "signup"
   delete "/logout", to: "sessions#destroy", as: "logout"
   get "/welcome", to: "users#welcome", as: "welcome"
+  get "/profile/:id", to: "users#show", as: "profile"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -7,7 +7,13 @@
 
 </div>
 <div style="text-align:center">
-<h4>Search hikes located in the cities we work with: [have dropdown select box of like 50 cities here]</h4>
+<h4>Search hikes located in the cities we work with: </h4>
+<%= form_tag(hikes_path, method: "get") do %>
+<select name=hike[:location]>
+<option value="None">-Select-</option>
+<option value="Seattle">Seattle</option>
+<option value="Eugene">Eugene</option>
 <h5>and/or</h5>
 <h4>Search hikes by difficulty level: [have dropdown select box of easy, moderate, or difficult here]</h4>
 </div>
+

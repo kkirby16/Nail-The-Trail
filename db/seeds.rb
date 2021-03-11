@@ -17,7 +17,7 @@ years_hiking_levels = "1,2,3,4,5,6,7,8,9,10".split(",")
   Hike.create(name: Faker::Address.unique.community, location: cities.sample, description: Faker::Hipster.paragraph(sentence_count: 8), difficulty: difficulty_levels.sample)
 end
 
-60.times do
+80.times do
   User.create(name: Faker::Name.unique.name, username: Faker::Hipster.words(number: 2).join, city: cities.sample, bio: Faker::Hipster.paragraph(sentence_count: 6), years_hiking: years_hiking_levels.sample, password: Faker::Internet.password(min_length: 8))
 end
 

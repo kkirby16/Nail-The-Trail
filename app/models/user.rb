@@ -7,4 +7,5 @@ class User < ApplicationRecord
   validates :city, presence: true
   validates :password, presence: true
   validates :username, uniqueness: true
+  #need a scope method here
 end

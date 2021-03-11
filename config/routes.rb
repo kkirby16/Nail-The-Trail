@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  resources :hikes
-  resources :reviews
-  resources :users
+  resources :hikes do
+    resources :reviews
+  end
+  resources :users do
+    resources :reviews, only: [:show]
+  end
   root "application#home"
   get "/login", to: "sessions#new", as: "login"
   post "/login", to: "sessions#create", as: "login-post"

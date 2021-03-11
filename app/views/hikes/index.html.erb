@@ -1,0 +1,13 @@
+<h1>Hikes in <%= params[:hike][:":location"] %></h1>
+<h4><%= @hikes.count %> <%= params[:hike][:":location"] %> hikes found!</h4>
+
+<ol>
+<% @hikes.each do |hike| %>
+<li><h3><b>Hike name: </b><%= hike.name %></h3>
+<h4>Average star rating: <%= hike.avg_star_rating %></h4>
+<h4>Difficulty: <%= hike.difficulty %></h4>
+<h4>Hike description: <%= hike.description %></h4>
+<h4><%= link_to "See the #{hike.reviews.count} reviews for this hike", hike_reviews_path(hike) %></h4><br>
+<% end %>
+</ol>
+

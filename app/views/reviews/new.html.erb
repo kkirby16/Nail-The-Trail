@@ -1,0 +1,9 @@
+<h1>Create a new review for <%= @hike.name %></h1> 
+
+<%= form_for(@review) do |f| %>
+<%= t.text_field :title %>
+<%= f.text_field :description %>
+<%= f.date_field :date %>
+<%= f.number_field :star_rating %>
+<%= f.submit "Create review" %>
+<% end %>

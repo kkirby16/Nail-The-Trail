@@ -45,6 +45,8 @@ group :development do
   gem "pry", "~> 0.13.1"
   gem "pry-rails"
   gem "faker"
+  gem "omniauth", "~> 1.9.1"
+  gem "omniauth-facebook"
 end
 
 group :test do

@@ -8,6 +8,8 @@ class ReviewsController < ApplicationController
   end
 
   def new
+    @hike = Hike.find(params[:hike_id])
+    @review = Review.new
   end
 
   def create

@@ -3,11 +3,11 @@
 
 <h1>Hello <%= current_user.username %>!</h1>
 
-<h2>Find your dream hike!:</h2><br><br>
+<h2>Find your dream hike:</h2><br><br>
 
 </div>
 <div style="text-align:center">
-<h4>Search hikes located in the cities we work with: </h4>
+<h4>Search hikes located in the cities we work with (or don't select city to see all of our hikes): </h4>
 <%= form_tag(hikes_path, method: "get") do %>
 <select name=hike[:location]>
 <option value="None">-Select-</option>

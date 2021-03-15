@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :username
       t.string :email
-      t.string :city
+      t.string :city, default: "unspecified"
       t.text :bio
       t.string :years_hiking
       t.boolean "admin", default: false

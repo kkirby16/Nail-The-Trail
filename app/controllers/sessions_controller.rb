@@ -6,11 +6,11 @@ class SessionsController < ApplicationController
 
   def create #want to find a user by the omniauth email, or create a user by the omniauth email if it doesn't exist.
     if auth
-      @user = User.find_or_create_by(email: auth["info"]["email"]) do |u|
-        u.name = auth["info"]["name"]
-        u.password = SecureRandom.hex(10)
-      end
-      if @user.persisted?
+      @user = User.find_or_create_by(email: auth["info"]["email"])
+      @user.name = auth["info"]["name"]
+      @user.username = auth["info"]["name"]
+      @user.password = SecureRandom.hex(10)
+      if @user.save
         session[:user_id] = @user.id
         redirect_to welcome_path  #if we're repeating code for the auth part and the non-auth part of this method, try to look at a way to dry this code up. lines 14, 15 and 16 could be pretty repeated later on.
       else

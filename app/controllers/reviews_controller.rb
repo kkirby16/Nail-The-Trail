@@ -15,6 +15,7 @@ class ReviewsController < ApplicationController
   end
 
   def create
+    @hike = Hike.find_by(id: params[:hike_id])
     @review = Review.new(review_params)
     if @review.save
       redirect_to hike_reviews_path

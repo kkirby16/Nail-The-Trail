@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2021_03_03_075921) do
     t.string "name"
     t.string "username"
     t.string "email"
-    t.string "city"
+    t.string "city", default: "unspecified"
     t.text "bio"
     t.string "years_hiking"
     t.boolean "admin", default: false

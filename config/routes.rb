@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :reviews, only: [:show]
   end
 
+  resources :reviews
+
   get "/auth/facebook/callback", to: "sessions#create"
   root "application#home"
   get "/login", to: "sessions#new", as: "login"

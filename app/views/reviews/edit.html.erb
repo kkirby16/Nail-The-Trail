@@ -1,0 +1,13 @@
+<h1>Edit your review for <%= @hike.name %></h1><br>
+
+<%= render "error_messages" %>
+
+<%= form_for @review do |f| %>
+<%= f.hidden_field :user_id, value: current_user.id %>
+<%= f.hidden_field :hike_id, value: @hike.id %>
+Title: <%= f.text_field :title %><br><br>
+Description: <%= f.text_field :description %><br><br>
+Date: <%= f.date_field :date %><br><br>
+Star rating: <%= f.number_field :star_rating %><br><br>
+<%= f.submit "Edit review" %>
+<% end %>

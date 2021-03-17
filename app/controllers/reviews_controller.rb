@@ -33,10 +33,17 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
     @hike = @review.hike
     if @review.update(review_params)
-      redirect_to hike_reviews_path(@hike)
+      redirect_to hike_reviews_path(@hike), notice: "Your review has been edited."
     else
       redirect_to edit_review_path(@review)
     end
+  end
+
+  def destroy
+    @review = Review.find(params[:id])
+    @hike = @review.hike
+    @review.destroy
+    redirect_to hike_reviews_path(@hike), notice: "Your review has been deleted."
   end
 
   private

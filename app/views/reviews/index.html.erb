@@ -1,11 +1,18 @@
 <h1>Reviews for <%= Hike.find(params[:hike_id]).name %> hike</h1><br>
 
+<% if flash[:notice] %>
+<div class="center alert">
+    <h2><%= flash[:notice] %></h2>
+    </div>
+  <% end %><br>
+
 <ul>
 <% @reviews.each do |review| %>
 <h4>Reviewer name: <%= review.user.name %></h4>
 <h4>Rating: <%= review.star_rating %>/5</h4>
 <h4>Review title: <%= review.title %></h4>
 <h4>Description: <%= review.description %></h4>
-<h4>Date reviewed: <%= review.date %></h4><br><br>
+<h4>Date reviewed: <%= review.date %></h4>
+<h4><%= link_to "Edit your review", edit_review_path(review) if review.user == current_user %></h4><br><br>
 <% end %>
 </ul>

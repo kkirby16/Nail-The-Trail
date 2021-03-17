@@ -24,6 +24,21 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def edit
+    @review = Review.find(params[:id])
+    @hike = @review.hike
+  end
+
+  def update
+    @review = Review.find(params[:id])
+    @hike = @review.hike
+    if @review.update(review_params)
+      redirect_to hike_reviews_path(@hike)
+    else
+      redirect_to edit_review_path(@review)
+    end
+  end
+
   private
 
   def review_params

@@ -1,9 +1,12 @@
-<h1>Profile page for <%= @user.username %></h1><br>
+<h1>Profile page for <%= @user.name %></h1><br>
 <h2><label>My name: </label><%= @user.name %></h2>
+<h2><label>My username: </label><%= @user.username %></h2>
 <h2><label>My email: </label><%= @user.email %></h2>
 <h2><label>My city: </label><%= @user.city %></h2>
-<h2><label>My bio: ***maybe have it so that bio and years hiking don't show for an omniauth logged in user since they don't come in with bio or years hiking.</label><%= @user.bio %></h2>
-<h2><label>My number of years hiking: </label><%= @user.years_hiking %></h2><br>
+<h2><label>My bio: </label><%= @user.bio %></h2>
+<h2><label>My number of years hiking: </label><%= @user.years_hiking %></h2>
+
+<h2><%= link_to "Edit your user info", edit_user_path(@user) %><br><br><br><br>
 
 <h2>My left reviews:</h2> 
 <% if @user.reviews.count == 0 %>

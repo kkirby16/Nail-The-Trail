@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 2021_03_03_075921) do
     t.string "username"
     t.string "email"
     t.string "city", default: "unspecified"
-    t.text "bio"
-    t.string "years_hiking"
+    t.text "bio", default: "unspecified"
+    t.string "years_hiking", default: "unspecified"
     t.boolean "admin", default: false
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false

@@ -4,9 +4,7 @@
 <h2><label>My email: </label><%= @user.email %></h2>
 <h2><label>My city: </label><%= @user.city %></h2>
 <h2><label>My bio: </label><%= @user.bio %></h2>
-<h2><label>My number of years hiking: </label><%= @user.years_hiking %></h2>
-
-<h2><%= link_to "Edit your user info", edit_user_path(@user) %><br><br><br><br>
+<h2><label>My number of years hiking: </label><%= @user.years_hiking %></h2><br><br><br>
 
 <h2>My left reviews:</h2> 
 <% if @user.reviews.count == 0 %>

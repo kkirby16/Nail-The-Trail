@@ -1,3 +1,23 @@
 // Place all the styles related to the Hikes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.button_for_hikes {
+    background-color: rgb(52, 117, 228);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button_for_hikes:hover {
+    background-color: rgb(7, 91, 187); 
+  }
+  

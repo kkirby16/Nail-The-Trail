@@ -1,11 +1,11 @@
 
 
-<br><h2><%= link_to "Login with Facebook", "/auth/facebook" %></h2>
+<br><h2><%= link_to "Login with Facebook", "/auth/facebook", class: "blue_button" %></h2>
 
 <h2>Or</h2>
 
 
-<h1>Login</h1>
+<h1>Login normally</h1>
 
 <%= form_tag("/login", method: "post") do %>
 <%= text_field_tag :"[user]username", nil, placeholder: "Username" %><br><br>

@@ -1,19 +1,26 @@
 header {
-    background: grey;
     padding: 10px;
+    border-bottom: 1px solid rgb(221,221,221);
+    background-color: white;
     ul {
       margin: 0;
       margin-right: 15px;
       padding: 0;
       float: left;
       list-style-type: none;
+      
     }
     a {
       text-decoration: none;
       font-family: Helvetica;
       font-weight: lighter;
 
-      color: white;
+      color: rgb(102, 102, 102);
+    }
+
+    a:hover { 
+      color: rgb(250, 153, 17);
+
     }
   }
   

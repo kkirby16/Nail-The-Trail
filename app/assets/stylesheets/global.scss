@@ -17,4 +17,47 @@ body {
       display: table;
 
   }
+
+  h1, h2, h3, h4, h5, ol {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: lighter;
+
+    color: white;
+  }
+
+
+  html {
+    background: url(https://cutewallpaper.org/21/hike-wallpapers/5400885-4592x3064-hike-wallpapers-scenic-summit-.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+
+  .blue_button {
+    background-color: rgb(52, 117, 228); /* Green */
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .blue_button:hover {
+    background-color:  rgb(7, 91, 187); 
+  }
+
+  .title_text {
+    font-size: 278%;
+  }
+
+  .enlargened_body_text {
+    font-size: 108%;
+  }
   

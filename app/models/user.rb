@@ -11,5 +11,8 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
   validates_format_of :email,
                       :with => /\A\S+@.+\.\S+\z/
-  #need a scope method here
+
+  def self.most_active_user
+    self.all.joins(:reviews).group("users.id").where("reviews.created_at >= ?", 10.years.ago.utc).order("count(reviews.id) desc").limit(1).first
+  end
 end

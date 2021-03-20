@@ -28,8 +28,7 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
   end
 
-  def edit
-    @user = User.find_by(id: params[:id])
+  def most_active_user
   end
 
   private

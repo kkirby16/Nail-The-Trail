@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get "/home", to: "users#welcome", as: "welcome"
   get "/profile/:id", to: "users#show", as: "profile"
   delete "/hikes/:hike_id/reviews/:id", to: "reviews#destroy", as: "delete"
+  get "/most_active", to: "users#most_active_user", as: "most_active"
 
   #need something like get "/users/:id/reviews" which would be a nested resource index.
   #need something like get "/users/1/reviews" which would be a url for my nested resource index.

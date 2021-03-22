@@ -4,7 +4,7 @@ class CreateHikes < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :location
       t.text :description
-      t.integer :avg_star_rating
+      t.float :avg_star_rating, default: 0, precision: 3, scale: 2
       t.string :difficulty
 
       t.timestamps

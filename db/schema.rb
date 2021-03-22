@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_03_03_075921) do
     t.string "name"
     t.string "location"
     t.text "description"
-    t.integer "avg_star_rating"
+    t.float "avg_star_rating", default: 0.0
     t.string "difficulty"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

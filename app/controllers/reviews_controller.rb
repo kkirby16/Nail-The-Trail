@@ -35,7 +35,7 @@ class ReviewsController < ApplicationController
     if @review.update(review_params)
       redirect_to hike_reviews_path(@hike), notice: "Your review has been edited."
     else
-      redirect_to edit_review_path(@review)
+      render :edit
     end
   end
 

@@ -14,7 +14,7 @@
 
 -If you click the create account button in the navigation bar at the top of the home page you can create an account normally without Facebook if you fill out all fields that aren't marked optional. Instructions for using the website are detailed in the section right below. 
 
-### Description of this app:
+### Description of this app and how to use it:
 
 Nail the Trail is a Rails MVC Content Management System app. I designed this website to allow users to find the right hiking trail for their next adventure, see intel and user reviews for trails to enable success on-trail, help others by leaving reviews for hikes, and more. We simply enable all hikers to nail the trail! 
 

@@ -7,7 +7,6 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :city, default: "unspecified"
       t.text :bio, default: "unspecified"
       t.string :years_hiking, default: "unspecified"
-      t.boolean "admin", default: false
       t.string :password_digest
 
       t.timestamps

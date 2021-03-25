@@ -5,5 +5,5 @@
 <label>Description:</label> <%= f.text_field :description %><br><br>
 <label>Date:</label> <%= f.date_field :date %><br><br>
 <label>Star rating:</label> <%= f.number_field :star_rating, min: 1, max: 5 %><br><br>
-<%= f.submit %>
+<%= f.submit(class: "button_for_reviews") %>
 <% end %>

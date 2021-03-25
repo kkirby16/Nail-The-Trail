@@ -1,6 +1,8 @@
 require "pry"
 
 class ReviewsController < ApplicationController
+  before_action :require_login
+
   def index
     if params[:hike_id]
       @reviews = Hike.find(params[:hike_id]).reviews
@@ -50,6 +52,10 @@ class ReviewsController < ApplicationController
 
   def review_params
     params.require(:review).permit(:user_id, :hike_id, :title, :description, :date, :star_rating)
+  end
+
+  def require_login
+    return head(:forbidden) unless session.include? :user_id
   end
 
   #create strong params method too.

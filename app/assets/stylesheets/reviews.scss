@@ -1,3 +1,22 @@
 // Place all the styles related to the Reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.button_for_reviews {
+    background-color: #885e46;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button_for_reviews:hover {
+    background-color: #724f3a; 
+  }

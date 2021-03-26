@@ -60,6 +60,6 @@ If a user ever wants to navigate back to the user homepage, they can click the h
 
 When a user is done using our website they can click the logout button in the top right corner of the navigation bar to logout. 
 
-Video of how to use my app: 
+Video of how to use my app: https://www.youtube.com/watch?v=2kKjG923AMg
 
 This project is licensed under: https://www.gnu.org/licenses/gpl-3.0.en.html

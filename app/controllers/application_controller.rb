@@ -11,4 +11,9 @@ class ApplicationController < ActionController::Base
   def logged_in?
     current_user != nil
   end
+
+  def log_user_in
+    session[:user_id] = @user.id
+    redirect_to welcome_path
+  end
 end

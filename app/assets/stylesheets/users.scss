@@ -63,3 +63,26 @@
   .most_active_user_button:hover {
     background-color: #395598; 
   }
+
+  .button_for_account_creation {
+    background-color: transparent;
+    font-weight: bold;
+    border: 1px solid #f0b269;
+    color: #f0b269;
+    border-radius: 2px;
+    padding: 9px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition-duration: 0.09s;
+    cursor: pointer;
+  }
+  
+  .button_for_account_creation:hover {
+    background-color: #f0b269; 
+    color: white;
+    font-weight: bold;
+  }
+
+  

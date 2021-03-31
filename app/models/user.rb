@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_secure_password
+  has_secure_password #Adds methods to set and authenticate against a BCrypt password.
   has_many :reviews
   has_many :hikes, through: :reviews
   validates :name, presence: true

@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
         if @user.authenticate(params[:user][:password])
           log_user_in #helper method
         else
-          redirect_to login_path, notice: "*Please enter a valid password."
+          redirect_to login_path, notice: "*Please enter a valid username and your password."
         end
       else
         redirect_to login_path, notice: "*Please enter a valid username and your password."

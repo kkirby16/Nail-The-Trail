@@ -11,4 +11,10 @@ class Hike < ApplicationRecord
       Hike.all
     end
   end
+
+  def self.search_by_name(search)
+    if search
+      where("name LIKE ?", "%#{search}%")
+    end
+  end
 end

@@ -1,11 +1,29 @@
-<% if params[:hike][:":location"] != "None" %>
+<%= form_tag(hikes_path, method: "get", style: "float:right" ) do %>
+<input type="text" size= "28" name="q" placeholder="Search hike by name across site">
+<%= submit_tag "Search", class: "button_for_name_search"%>
+<% end %>
+
+
+
+
+<% if params[:hike] && params[:hike][:":location"] != "None" %>
 
 <h1>Hikes in <%= params[:hike][:":location"] %></h1>
 <h4><%= @hikes.count %> <%= params[:hike][:":location"] %> hikes found!</h4>
 
+<% elsif %>
+<% params[:q] != nil && params[:q] != "" %>
+<h4><%= pluralize(@hikes.count, "similar hike") %> found on our website!</h4>
+<% elsif %>
+<% params[:q] != nil && params[:q] == "" || params[:q] == " " %>
+<h4>Search was empty, please search for hike name. Here are the <%= @hikes.count %> total hikes found on our website!</h4>
 <% else %>
 <h4><%= @hikes.count %> total hikes found on our website!</h4>
 <% end %>
+
+
+
+
 
 <ol>
 <% @hikes.each do |hike| %>

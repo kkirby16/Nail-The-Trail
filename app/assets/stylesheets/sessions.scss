@@ -1,21 +1,21 @@
 .button_for_login {
-    background-color: transparent;
-    font-weight: bold;
-    border: 1.5px solid #f0b269;
-    color: #f0b269;
-    border-radius: 2px;
-    padding: 10px 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
-    transition-duration: 0.09s;
-    cursor: pointer;
-  }
-  
-  .button_for_login:hover {
-    background-color: #f0b269; 
-    color: white;
-    font-weight: bold;
-  }
+  background-color: transparent;
+  font-weight: bold;
+  border: 1.5px solid #f0b269;
+  color: #f0b269;
+  border-radius: 2px;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.09s;
+  cursor: pointer;
+}
+
+.button_for_login:hover {
+  background-color: #f0b269;
+  color: white;
+  font-weight: bold;
+}

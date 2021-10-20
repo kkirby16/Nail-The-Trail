@@ -1,82 +1,88 @@
 body {
-    margin: 0;
-  }
-  
-  .content {
-    margin: 10px auto;
-    width: 70%;
-  }
-  
-  .clearfix {
-    overflow: hidden;
-  }
+  margin: 0;
+}
 
-  .field_with_errors { 
-      padding: 2px; 
-      background-color: red; 
-      display: table;
+.content {
+  margin: 10px auto;
+  width: 70%;
+}
 
-  }
+.clearfix {
+  overflow: hidden;
+}
 
-  h1, h2, h3, h4, h5, ol, li, label {
-    text-decoration: none;
-    font-family: Helvetica;
-    font-weight: lighter;
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
 
-    color: white;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+ol,
+li,
+label {
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight: lighter;
 
-  .styled_font_for_notices { 
-    text-decoration: none;
-    font-family: Helvetica;
-    font-weight: lighter;
+  color: white;
+}
 
-    color: white;
-  }
+.styled_font_for_notices {
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight: lighter;
 
-  html {
-    background: linear-gradient( rgba(0, 0, 0, .06), rgba(0, 0, 0, .06)), url(https://cutewallpaper.org/21/hike-wallpapers/5400885-4592x3064-hike-wallpapers-scenic-summit-.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-  }
+  color: white;
+}
 
-  .blue_button {
-    background-color: rgb(52, 117, 228); /* Green */
-    border: none;
-    color: white;
-    border-radius: 4px;
-    padding: 2.5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .blue_button:hover {
-    background-color:  rgb(7, 91, 187); 
-  }
+html {
+  background: linear-gradient(rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+    url(https://cutewallpaper.org/21/hike-wallpapers/5400885-4592x3064-hike-wallpapers-scenic-summit-.jpg)
+      no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 
-  .title_text {
-    font-size: 278%;
-  }
+.blue_button {
+  background-color: rgb(52, 117, 228); /* Green */
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 2.5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
-  .enlargened_body_text {
-    font-size: 108%;
-  }
-  
-  input { 
-    border-radius: 4.5px;
-    border: 1px solid black;
-    padding: 2px 2px
-  
-  }
-    input:focus {
-      background: #eeeeee;
-      border: 1px solid black;
-      outline: none;
-    
-    }
+.blue_button:hover {
+  background-color: rgb(7, 91, 187);
+}
+
+.title_text {
+  font-size: 278%;
+}
+
+.enlargened_body_text {
+  font-size: 108%;
+}
+
+input {
+  border-radius: 4.5px;
+  border: 1px solid black;
+  padding: 2px 2px;
+}
+input:focus {
+  background: #eeeeee;
+  border: 1px solid black;
+  outline: none;
+}

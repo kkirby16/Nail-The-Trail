@@ -45,6 +45,8 @@
 .hikes_in_city {
   font-size: 38px;
   letter-spacing: 0.5px;
+  margin-top: 3.9%;
+  margin-bottom: -0.5%;
 }
 
 // .hike_info {
@@ -54,5 +56,9 @@
 .input_for_search {
   padding: 4px 9px;
   border-radius: 1.5px;
-  border: 1px solid grey;
+  border: 1px solid #888888;
+}
+
+.input_for_search:focus {
+  border: 1px solid #787878;
 }

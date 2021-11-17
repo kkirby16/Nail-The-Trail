@@ -3,22 +3,21 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .button_for_reviews {
-    background-color: #a37053;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .button_for_reviews:hover {
-    background-color: #906349; 
-    margin-top: 6.0px;
-  }
+  background-color: #a37053;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
+.button_for_reviews:hover {
+  background-color: #906349;
+  margin-top: 6px;
+}

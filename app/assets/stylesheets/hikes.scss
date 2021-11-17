@@ -3,39 +3,56 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .button_for_hikes {
-    background-color: rgb(52, 117, 228);
-    border: none;
-    color: white;
-    border-radius: 4px;
-    padding: 2.5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .button_for_hikes:hover {
-    background-color: rgb(7, 91, 187); 
-  }
+  background-color: rgb(52, 117, 228);
+  border: none;
+  color: white;
+  border-radius: 5.5px;
+  padding: 3.5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
-  .button_for_name_search {
-    background-color: #a37053;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    padding: 4px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .button_for_name_search:hover {
-    background-color: #906349; 
-  }
+.button_for_hikes:hover {
+  background-color: rgb(7, 91, 187);
+}
+
+.button_for_name_search {
+  background-color: transparent;
+  border: 1.5px solid #a37053;
+  color: #a37053;
+  border-radius: 2px;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 3px 10px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.button_for_name_search:hover {
+  background-color: #a37053;
+  color: white;
+}
+
+.hikes_in_city {
+  font-size: 38px;
+  letter-spacing: 0.5px;
+}
+
+// .hike_info {
+//   border: 1px solid white;
+// }
+
+.input_for_search {
+  padding: 4px 9px;
+  border-radius: 1.5px;
+  border: 1px solid grey;
+}

@@ -1,5 +1,5 @@
-<%= form_tag(hikes_path, method: "get", style: "float:right" ) do %>
-<input type="text" size= "28" name="q" placeholder="Search hike by name across site">
+<br><br><br><%= form_tag(hikes_path, method: "get", style: "float:right" ) do %>
+<input type="text" class="input_for_search" size= "27" name="q" placeholder="Search hike by name across site">
 <%= submit_tag "Search", class: "button_for_name_search"%>
 <% end %>
 
@@ -8,7 +8,7 @@
 
 <% if params[:hike] && params[:hike][:":location"] != "None" %>
 
-<h1>Hikes in <%= params[:hike][:":location"] %></h1>
+<h1 class="hikes_in_city">Hikes in <%= params[:hike][:":location"] %></h1>
 <h4><%= @hikes.count %> <%= params[:hike][:":location"] %> hikes found!</h4>
 
 <% elsif %>
@@ -27,7 +27,8 @@
 
 <ol>
 <% @hikes.each do |hike| %>
-<li><h3><b>Hike name: </b><%= hike.name %></h3>
+<div class="hike_info">
+<li><h3><b>Name: </b><%= hike.name %></h3>
 <h4><b>Location: </b><%= hike.location %></h4>
 <h4><b>Average star rating: </b><%= hike.avg_star_rating.round(2) %> stars/5 stars</h4>
 <h4><b>Difficulty: </b><%= hike.difficulty %></h4>
@@ -35,5 +36,7 @@
 <h4><%= link_to "See the #{pluralize(hike.reviews.count, "review")} for this hike", hike_reviews_path(hike), class: "button_for_hikes" if hike.reviews.count != 0 %></h4>
 <% if hike.reviews.count == 0 %><h5>There are no reviews yet for this hike.</h5><% end %>
 <h4><%= link_to "Create a new review for this hike", new_hike_review_path(hike), class: "button_for_hikes" %></h4><br>
+</div>
 <% end %>
+
 </ol>

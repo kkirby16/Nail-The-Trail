@@ -4,6 +4,20 @@
 
 Nail the Trail is a Rails MVC Content Management System app. I designed this website to allow users to find the right hiking trail for their next adventure, see intel and user reviews for trails to enable success on-trail, help others by leaving reviews for hikes, and more. We simply enable all hikers to nail the trail!
 
+## Built with:
+
+-Ruby on Rails with MVC structure and RESTful conventions
+
+-Custom CSS
+
+-Facebook omniauth option for login
+
+-SQLite database
+
+-Used ActiveRecord for creation and use of objects
+
+## Overview of functionality:
+
 Nail the Trail gives users the ability to:
 
 -Login (via Omniauth Facebook login or normal login), create an account, and logout

@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       @user.username = auth["info"]["name"]
       @user.password = SecureRandom.hex(10)
       if @user.save
-        log_user_in  #if we're repeating code for the auth part and the non-auth part of this method, try to look at a way to dry this code up. lines 14, 15 and 16 could be pretty repeated later on.
+        log_user_in  #helper method in application controller
       else
         redirect_to login_path
       end
@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
       @user = User.find_by(username: params[:user][:username])
       if @user
         if @user.authenticate(params[:user][:password])
-          log_user_in #helper method
+          log_user_in #helper method in application controller
         else
           redirect_to login_path, notice: "*Please enter a valid username and your password."
         end

@@ -11,5 +11,3 @@ class User < ApplicationRecord
     self.all.joins(:reviews).group("users.id").where("reviews.created_at >= ?", 10.years.ago.utc).order("count(reviews.id) desc").limit(1).first
   end
 end
-
-#countercash rails. tells you how many reviews each user has made.

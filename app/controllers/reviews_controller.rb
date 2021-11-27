@@ -57,6 +57,4 @@ class ReviewsController < ApplicationController
   def require_login
     return head(:forbidden) unless session.include? :user_id
   end
-
-  #create strong params method too.
 end

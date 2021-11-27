@@ -10,7 +10,7 @@ Nail the Trail is a Rails MVC Content Management System app. I designed this web
 
 -Custom CSS
 
--Facebook omniauth option for login
+-Facebook OmniAuth option for login
 
 -SQLite database
 
@@ -20,7 +20,7 @@ Nail the Trail is a Rails MVC Content Management System app. I designed this web
 
 Nail the Trail gives users the ability to:
 
--Login (via Omniauth Facebook login or normal login), create an account, and logout
+-Login (via OmniAuth Facebook login or normal login), create an account, and logout
 
 -Select to view hikes in 12 of our cities, or select no specific city to see all hikes on our site across all our cities.
 
@@ -75,5 +75,7 @@ Nail the Trail gives users the ability to:
 -When a user is done using our website they can click the logout button in the top right corner of the navigation bar to logout.
 
 ### Video of how to use my app: https://www.youtube.com/watch?v=2kKjG923AMg
+
+### Blog I wrote related to this project detailing how I solved one of the harder parts: https://dev.to/kkirby16/how-i-solved-a-harder-part-of-my-rails-hike-related-app-1f5a
 
 #### This project is licensed under: https://www.gnu.org/licenses/gpl-3.0.en.html

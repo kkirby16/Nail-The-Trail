@@ -1,5 +1,7 @@
 <br><br>
-<h1>Reviews for <%= Hike.find(params[:hike_id]).name %> hike</h1><br>
+<h1>Reviews for <%= Hike.find(params[:hike_id]).name %> hike</h1>
+<h4><%= link_to "Create a new review for this hike", new_hike_review_path(Hike.find(params[:hike_id])), class: "newReviewReviewsPage" %></h4><br>
+
 
 <% if flash[:notice] %>
 <div class="center alert">

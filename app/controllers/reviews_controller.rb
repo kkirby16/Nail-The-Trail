@@ -20,7 +20,7 @@ class ReviewsController < ApplicationController
     @hike = Hike.find_by(id: params[:review][:hike_id])
     @review = Review.new(review_params)
     if @review.save
-      redirect_to hike_reviews_path(@hike), notice: "Thanks for creating a review! It's now listed below!"
+      redirect_to hike_reviews_path(@hike), notice: "✓ Thanks for creating a review! It's now listed below!"
     else
       render :new
     end

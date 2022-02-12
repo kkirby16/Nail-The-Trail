@@ -49,9 +49,15 @@
   margin-bottom: -0.5%;
 }
 
-// .hike_info {
-//   border: 1px solid white;
-// }
+.hike_info {
+  border: 1px rgba(56, 88, 138, 0.68);
+  border-radius: 4px;
+  padding-left: 30px;
+  padding-right: 5px;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  background: rgba(56, 88, 138, 0.68);
+}
 
 .input_for_search {
   padding: 4px 9px;

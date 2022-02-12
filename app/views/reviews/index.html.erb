@@ -4,8 +4,8 @@
 <h4><%= link_to "Create a new review for this hike", new_hike_review_path(Hike.find(params[:hike_id])), class: "newReviewReviewsPage createReviewButton" %></h4>
 
 <% if flash[:notice] %>
-<div class="center alert">
-    <h2><%= flash[:notice] %></h2>
+<div class="textBackground">
+    <br><h2 class="notice"><%= flash[:notice] %></h2>
     </div>
   <% end %><br>
 

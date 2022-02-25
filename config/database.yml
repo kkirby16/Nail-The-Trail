@@ -1,23 +1,23 @@
+# SQLite. Versions 3.8.0 and up are supported.
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+
 default: &default
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
+  timeout: 5000
 development:
   <<: *default
-  database: <Nail-The-Trail>_development
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
+  username: development_nail_the_trail
+  database: development_nail_the_trail
 test:
   <<: *default
-  database: <Nail-The-Trail>_test
-
+  database: test_nail_the_trail
 production:
   <<: *default
-  database: <Nail-The-Trail>_production
-  username: nail_the_trail
-  password: <%= ENV['NAIL_THE_TRAIL_DATABASE_PASSWORD'] %>
+  database: production_nail_the_trail
+  username: production_nail_the_trail

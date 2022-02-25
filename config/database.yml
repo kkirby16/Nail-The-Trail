@@ -7,10 +7,12 @@
 
 default: &default
   adapter: postgresql
+  encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 development:
   <<: *default
+  username: development_nail_the_trail
   database: development_nail_the_trail
 test:
   <<: *default
@@ -18,3 +20,4 @@ test:
 production:
   <<: *default
   database: production_nail_the_trail
+  username: production_nail_the_trail

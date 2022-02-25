@@ -14,7 +14,7 @@ class Hike < ApplicationRecord
 
   def self.search_by_name(search)
     if search
-      where("name LIKE ?", "%#{search}%")
+      Hike.where("name ilike ?", "%#{search}%")
     end
   end
 end

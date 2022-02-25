@@ -12,7 +12,7 @@ Nail the Trail is a Rails MVC Content Management System app. I designed this web
 
 -Facebook OmniAuth option for login
 
--SQLite database
+-PostgreSQL database
 
 -Used ActiveRecord for creation and use of objects
 

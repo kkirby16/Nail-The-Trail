@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 2021_03_03_075921) do
   enable_extension "plpgsql"
 
   create_table "hikes", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
+    t.text "name"
+    t.text "location"
     t.text "description"
     t.float "avg_star_rating", default: 0.0
-    t.string "difficulty"
+    t.text "difficulty"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2021_03_03_075921) do
   create_table "reviews", force: :cascade do |t|
     t.integer "user_id"
     t.integer "hike_id"
-    t.string "title"
+    t.text "title"
     t.text "description"
     t.date "date"
     t.integer "star_rating"
@@ -37,13 +37,13 @@ ActiveRecord::Schema.define(version: 2021_03_03_075921) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "username"
-    t.string "email"
-    t.string "city", default: "unspecified"
+    t.text "name"
+    t.text "username"
+    t.text "email"
+    t.text "city", default: "unspecified"
     t.text "bio", default: "unspecified"
-    t.string "years_hiking", default: "unspecified"
-    t.string "password_digest"
+    t.text "years_hiking", default: "unspecified"
+    t.text "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

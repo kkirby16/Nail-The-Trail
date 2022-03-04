@@ -1,5 +1,3 @@
-require "pry"
-
 class Review < ApplicationRecord
   after_save :update_hikes_average
   after_destroy :update_hikes_average

@@ -4,7 +4,7 @@
 
 Nail the Trail is a Rails MVC Content Management System app. I designed this website to allow users to find the right hiking trail for their next adventure, see intel and user reviews for trails to enable success on-trail, help others by leaving reviews for hikes, and more. We simply enable all hikers to nail the trail!
 
-Live Site: https://quiet-meadow-19683.herokuapp.com/
+Live Site: https://nail-the-trail.herokuapp.com/
 
 ## Built with:
 
@@ -76,7 +76,7 @@ Nail the Trail gives users the ability to:
 
 -When a user is done using our website they can click the logout button in the top right corner of the navigation bar to logout.
 
-### Live Site: https://quiet-meadow-19683.herokuapp.com/
+### Live Site: https://nail-the-trail.herokuapp.com/
 
 ### Video of how to use my app: https://www.youtube.com/watch?v=2kKjG923AMg
 
